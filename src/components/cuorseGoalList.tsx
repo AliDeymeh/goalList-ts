@@ -9,7 +9,7 @@ type CurseGoal = {
 };
 const CurseGoalList = (props:CurseGoal) => {
   if(props.goals.length===0){
-    return <InfoBox mode="hint" severity={undefined}>you have no course </InfoBox>
+    return <InfoBox mode="hint">you have no course </InfoBox>;
   }
   let warningBox:ReactNode;
   if(props.goals.length>=4){
